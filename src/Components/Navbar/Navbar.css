@@ -1,0 +1,76 @@
+.navbar {
+    background-color: #864241;
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.link {
+    text-transform: capitalize;
+    background-color: #fff;
+    color: #864241;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    margin-left: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: background-color 0.5s , color 0.5s;
+    -webkit-transition: background-color 0.5s , color 0.5s;
+    -moz-transition: background-color 0.5s , color 0.5s;
+    -ms-transition: background-color 0.5s , color 0.5s;
+    -o-transition: background-color 0.5s , color 0.5s;
+}
+.link > i {
+    margin-right: 5px;
+    font-size: 22px;
+}
+.link:hover {
+    color: #fff;
+    background-color: #864241;
+}
+.link:focus {
+    color: yellow !important;
+    background-color: teal !important;
+}
+@media screen and (max-width:991px) {
+    .navbar {
+        width: 450px;
+        margin: 0 auto 25px auto;
+        padding: 15px 10px 15px 10px;
+    }
+    .link {
+        margin: 0px 0px 15px 0px;
+    }
+    .link:first-of-type {
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width:600px) {
+    .navbar {
+        width: 350px;
+    }
+}
+@media screen and (max-width:480px) {
+    .navbar {
+        width: 300px;
+    }
+}
+@media screen and (max-width:400px) {
+    .navbar {
+        width: 260px;
+    }
+}
+@media screen and (max-width:300px) {
+    .navbar {
+        width: 210px;
+    }
+}

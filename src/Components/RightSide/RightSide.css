@@ -1,0 +1,41 @@
+.right-side {
+    background-color: #864241;
+    width: 100%;
+    height: auto;
+    padding: 40px 40px 25px 40px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+@media screen and (max-width:991px) {
+    .right-side {
+        width: 450px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:600px) {
+    .right-side {
+        width: 350px;
+    }
+}
+@media screen and (max-width:480px) {
+    .right-side {
+        width: 300px;
+    }
+}
+@media screen and (max-width:400px) {
+    .right-side {
+        width: 260px;
+        padding: 40px 25px 25px 25px;
+
+    }
+}
+@media screen and (max-width:300px) {
+    .right-side {
+        width: 210px;
+        padding: 40px 20px 25px 20px;
+
+    }
+}

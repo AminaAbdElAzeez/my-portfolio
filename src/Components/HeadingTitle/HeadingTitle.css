@@ -1,0 +1,44 @@
+.heading-title {
+    margin-bottom: 25px;
+}
+.heading-title > h2 {
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+    width: max-content;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: "Lobster", sans-serif;
+    position: relative;
+} 
+.heading-title > h2::after {
+    content: '';
+    position: absolute;
+    top: 42px;
+    left: 0px;
+    width: 40%;
+    height: 3px;
+    background-color: #fff;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -ms-transition: width 0.5s;
+    -o-transition: width 0.5s;
+}
+.heading-title > h2:hover:after {
+    width: 100%;
+}
+@media screen and (max-width:400px) {
+    .heading-title > h2 {
+        font-size: 28px;
+    } 
+    .heading-title > h2::after {
+        top: 35px;
+    }
+}
+@media screen and (max-width:300px) {
+    .heading-title > h2 {
+        font-size: 25px;
+    } 
+}

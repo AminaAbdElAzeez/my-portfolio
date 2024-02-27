@@ -1,0 +1,190 @@
+.filter-btn {
+    padding: 20px 0 10px 0;
+    margin-bottom: 10px;
+}
+.filter-btn button {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px 10px 10px 0px;
+    width: 70px;
+    height: 40px;
+    color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: background-color 0.5s , color 0.5s;
+    -webkit-transition: background-color 0.5s , color 0.5s;
+    -moz-transition: background-color 0.5s , color 0.5s;
+    -ms-transition: background-color 0.5s , color 0.5s;
+    -o-transition: background-color 0.5s , color 0.5s;
+}
+.filter-btn button:first-of-type {
+    background-color: #0D6EFD;
+    border: 3px solid #0D6EFD;
+}
+.filter-btn button:first-of-type:hover {
+    color: #0D6EFD;
+    background-color: #fff;
+}
+.filter-btn button:nth-of-type(2) {
+    background-color: #198754;
+    border: 3px solid #198754;
+}
+.filter-btn button:nth-of-type(2):hover {
+    color: #198754;
+    background-color: #fff;
+}
+.filter-btn button:nth-of-type(3) {
+    background-color: #DC3545;
+    border: 3px solid #DC3545;
+    text-transform: uppercase;
+}
+.filter-btn button:nth-of-type(3):hover {
+    color: #DC3545;
+    background-color: #fff;
+}
+.filter-btn button:nth-of-type(4) {
+    background-color: #bbd332;
+    border: 3px solid #bbd332;
+    text-transform: uppercase;
+}
+.filter-btn button:nth-of-type(4):hover {
+    color: #bbd332;
+    background-color: #fff;
+}
+.work-box {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.work-box > img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.works-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.work-box-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s , opacity 0.5s;
+    -webkit-transition: visibility 0.5s , opacity 0.5s;
+    -moz-transition: visibility 0.5s , opacity 0.5s;
+    -ms-transition: visibility 0.5s , opacity 0.5s;
+    -o-transition: visibility 0.5s , opacity 0.5s;
+}
+.work-box:hover .work-box-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+.work-box-overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 2px solid #fff;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.overlay-content {
+    position: absolute;
+    padding-top: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.overlay-content > i {
+    font-size: 20px;
+    color: #fec544;
+    background-color: #151b29;
+    border: 3px solid #fec544;
+    padding: 5px 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.work-box-title {
+    margin-top: 15px;
+    color: #fec544;
+    font-size: 20px;
+    font-weight: 700;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+@media screen and (max-width:600px) {
+    .work-box {
+        height: 150px;
+    }
+    .overlay-content > i {
+        font-size: 18px;
+        padding: 3px 7px 2px  7px;
+    }
+    .work-box-title {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:480px) {
+    .work-box {
+        height: 130px;
+    }
+    .filter-btn button {
+        font-size: 16px;
+        width: 60px;
+    }
+}
+@media screen and (max-width:400px) {
+    .work-box-title {
+        font-size: 15px;
+    }
+    .overlay-content > i {
+        font-size: 15px;
+        padding: 3px 7px 1px  7px;
+
+    }
+}

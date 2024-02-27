@@ -1,0 +1,121 @@
+.about-desc {
+    color: #E9CAB5;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+.about-box {
+    background-color: #E9CAB5;
+    padding: 30px 15px 15px 15px;
+    margin: 5px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.about-box::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0,0.7);
+    background: linear-gradient(#8d8dd4, #e47285);
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.about-box:hover::after {
+    height: 100%;
+}
+.about-box > i {
+    font-size: 22px;
+    color: #E9CAB5;
+    background-color: #864241;
+    border: 3px solid #864241;
+    padding: 5px 7px;
+    margin: 0px 7px 10px 0;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    transition: background-color 0.5s , color 0.5s;
+    -webkit-transition: background-color 0.5s , color 0.5s;
+    -moz-transition: background-color 0.5s , color 0.5s;
+    -ms-transition: background-color 0.5s , color 0.5s;
+    -o-transition: background-color 0.5s , color 0.5s;
+}
+.about-box:hover > i {
+    color: #864241;
+    background-color: #E9CAB5;
+} 
+.about-text > h3 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #864241;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.about-box:hover .about-text > h3 ,
+.about-box:hover .about-text-desc {
+    color: #E9CAB5;
+}
+.about-text-desc {
+    color: #864241;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+@media screen and (max-width:991px) {
+    .about-box {
+        height: 190px;
+    }
+}
+@media screen and (max-width:480px) {
+    .about-box {
+        height: 180px;
+    }
+    .about-text > h3 {
+        font-size: 17px;
+    }
+    .about-text-desc {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:400px) {
+    .about-box {
+        height: 210px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .about-desc {
+        font-size: 14px;
+    }
+}
