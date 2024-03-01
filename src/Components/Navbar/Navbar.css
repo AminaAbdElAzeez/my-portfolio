@@ -1,5 +1,7 @@
 .navbar {
-    background-color: #864241;
+    /*background-color: #864241;
+    */background-color: rgba(0,0,0,0.7);
+    box-shadow: 1px 1px 15px 0px yellow inset;
     margin-bottom: 25px;
     padding: 15px;
     border-radius: 10px;
@@ -7,6 +9,27 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    transition: box-shadow 0.5s;
+    -webkit-transition: box-shadow 0.5s;
+    -moz-transition: box-shadow 0.5s;
+    -ms-transition: box-shadow 0.5s;
+    -o-transition: box-shadow 0.5s;
+}
+.navbar:hover {
+    box-shadow: 1px 1px 15px 0px #3A9DF9 inset;
+}
+.navbar-toggler {
+    background-color: #fff;
+    border: 3px solid #864241;
+    transition: background-color 0.5s , color 0.5s;
+    -webkit-transition: background-color 0.5s , color 0.5s;
+    -moz-transition: background-color 0.5s , color 0.5s;
+    -ms-transition: background-color 0.5s , color 0.5s;
+    -o-transition: background-color 0.5s , color 0.5s;
+}
+.navbar-toggler:hover {
+    background-color: #864241;
+    border: 3px solid #fff;
 }
 .link {
     text-transform: capitalize;

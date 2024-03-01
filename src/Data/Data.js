@@ -10,7 +10,7 @@ export const data = [
         id:2,
         title: "Movflx",
         image: "/React/movflx.jpg",
-        link: 'https://sweet-brioche-cc768c.netlify.app/',
+        link: 'https://regal-torrone-403dd8.netlify.app/',
         category :"react"
     },
     {
