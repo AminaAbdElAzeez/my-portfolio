@@ -87,7 +87,7 @@ export const data = [
         id:13,
         title: "IT-Host",
         image: "/CSS/ithost.jpg",
-        link: 'https://cool-sundae-06d3da.netlify.app/',
+        link: 'https://visionary-rugelach-9ef7de.netlify.app/',
         category :"css"
     }, 
     {
